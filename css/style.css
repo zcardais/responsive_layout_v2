@@ -5,8 +5,6 @@
 body {
 	line-height: 1.6;
 	color: #000000;
-  width: 70%;
-  margin: 0 auto;
 }
 
 a {
@@ -20,6 +18,10 @@ a {
 
 /* ---- Layout Containers ---- */
 
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
 .main-header {
 	background: #fafafa;
 }
@@ -32,4 +34,16 @@ a {
 /* ---- Page Elements ---- */
 #home {
   background-image: url('Images/responsive-layout-profile.png');
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.container {
+		width: 70%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
 }
