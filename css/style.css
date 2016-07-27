@@ -84,6 +84,21 @@ ul.main-nav {
 	display: block;
 }
 
+.footer-name,
+.footer-nav li {
+	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	float: right;
+}
+
+.footer-name,
+.footer-nav a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
 /* ---- Layout Containers ---- */
 
 .container {
@@ -114,7 +129,7 @@ ul.main-nav {
 	background: #fafafa;
 }
 img {
-	width:80%;
+	max-width: 80%;
 }
 .three {
 	text-align: center;
@@ -124,16 +139,29 @@ img {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 789px) {
 
 	.wrap {
 		min-height: calc(100vh - 89px);
 	}
 
 	.container {
-		width: 80%;
+		width: 85%;
 		max-width: 1150px;
 		margin: 0 auto;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.name,
+	.main-nav li {
+		float:left;
+	}
+
+	.main-nav li {
+		margin-left: 12px;
 	}
 
 	.name,
@@ -169,11 +197,26 @@ img {
 	}
 
 	img {
-		width: 100%;
+		max-width: fill-available;
 	}
 
 	.three {
 		text-align: center;
 		background: #fafafa;
+	}
+
+	.footer-name {
+		float:left;
+	}
+	.footer-nav {
+		float:right;
+		list-style:none;
+		text-transform: uppercase;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
 	}
 }
