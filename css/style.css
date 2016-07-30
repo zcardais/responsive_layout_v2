@@ -125,6 +125,9 @@ ul.footer-nav {
 	padding-left: 1em;
 	padding-right: 1em;
 }
+.col-4 {
+	margin-bottom: 50px;
+}
 .main-footer {
 	padding: 2em 2em;;
 	background: #fafafa;
@@ -166,9 +169,19 @@ ul.footer-nav {
 	.container {
 		width: 85%;
 		max-width: 1150px;
-		margin: 0 auto 50px;
+		margin: 0 auto 20px;
 	}
-
+	.row {
+		width:100%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.main-header {
+		margin-bottom: 50px;
+		padding-top: .5em;
+		padding-bottom:.25em;
+		text-align: left;
+	}
 	.main-nav {
 		float: right;
 	}
@@ -222,6 +235,7 @@ ul.footer-nav {
 	  padding: 10px;
 	}
 	.three {
+		margin-top: 30px;
 		text-align: center;
 		background: #fafafa;
 	}
