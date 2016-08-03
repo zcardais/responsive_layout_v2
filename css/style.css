@@ -14,10 +14,12 @@ body {
 }
 
 p {
-	font-size: 1.25em;
+	font-size: 1.6em;
 	margin-bottom: 1.5em;
 	color: #4a4a4a;
 	font-weight: 300;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 h2,
@@ -34,6 +36,10 @@ h3 {
 
 h2 {
 	text-transform: uppercase;
+}
+h3 {
+	font-size:2em;
+	font-weight: normal;
 }
 
 a {
@@ -134,7 +140,7 @@ ul.footer-nav {
 }
 .socket {
 	border-top: 1px solid #dddddd;
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	padding: 1em 0 1em 0;
 }
@@ -165,7 +171,6 @@ ul.footer-nav {
 	.wrap {
 		min-height: calc(100vh - 89px);
 	}
-
 	.container {
 		width: 85%;
 		max-width: 1150px;
@@ -206,6 +211,12 @@ ul.footer-nav {
 		width: 240px;
 		margin-right: 50px;
 	}
+	.primary {
+		float: right;
+	}
+	.secondary {
+		float: left;
+	}
 	.col {
 		padding-left: 1em;
 		padding-right: 1em;
@@ -221,12 +232,6 @@ ul.footer-nav {
 		width: 50%;
 		margin-right: -4px;
 		vertical-align: top;
-	}
-	.primary {
-		float: right;
-	}
-	.secondary {
-		float: left;
 	}
 	.img {
 		width: 100%;
