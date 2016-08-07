@@ -131,7 +131,8 @@ ul.footer-nav {
 	padding-left: 1em;
 	padding-right: 1em;
 }
-.col-4 {
+.col-sm-12 {
+	width: 100%;
 	margin-bottom: 50px;
 }
 .main-footer {
@@ -166,20 +167,30 @@ ul.footer-nav {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
-	.wrap {
+	/*.wrap {
 		min-height: calc(100vh - 89px);
+	}*/
+	p {
+		font-size: 1.2em;
+		margin-bottom: 1.2em;
+		color: #4a4a4a;
+		font-weight: 300;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	h3 {
+		font-size:1.5em;
+		font-weight: normal;
 	}
 	.container {
-		width: 85%;
+		width: 90%;
 		max-width: 1150px;
 		margin: 0 auto 20px;
 	}
-	.row {
-		width:100%;
-		margin: 0 auto;
-		margin-bottom: 50px;
+	.two {
+		/*margin: 0 auto;*/
 	}
 	.main-header {
 		margin-bottom: 50px;
@@ -190,26 +201,23 @@ ul.footer-nav {
 	.main-nav {
 		float: right;
 	}
-
 	.name,
 	.main-nav li {
 		float:left;
 	}
-
 	.main-nav li {
 		margin-left: 12px;
 	}
-
 	.name,
 	.main-nav,
 	.main-nav li {
 		display: inline-block;
 		background:none;
 	}
-
 	.name {
-		width: 240px;
-		margin-right: 50px;
+		text-align: center;
+		/*width: 240px;*/
+		/*margin-right: 50px;*/
 	}
 	.primary {
 		float: right;
@@ -218,26 +226,18 @@ ul.footer-nav {
 		float: left;
 	}
 	.col {
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: 0;
+		padding-right: 0;
 	}
-	.col-4 {
+	.col-md-6 {
 		display: inline-block;
-		width: 33%;
-		text-align: center;
-		font-size: 1.1em;
-		/*background: rgba(217, 228, 234, 0.5);*/
-	}
-	.col-6 {
 		width: 50%;
 		margin-right: -4px;
 		vertical-align: top;
+		margin-bottom: 15px;
 	}
 	.img {
 		width: 100%;
-	  margin-top: 5px;
-	  margin-bottom: 25px;
-	  padding: 10px;
 	}
 	.three {
 		margin-top: 30px;
@@ -256,8 +256,46 @@ ul.footer-nav {
 		padding: 2em 2em;;
 		background: #fafafa;
 	}
-	.three p {
-		padding: 0 22em;
+	.lead {
+		padding: 0 5em;
+		margin-bottom: 2em;
+	}
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1024px) {
+	p {
+		font-size: 1.2em;
+		margin-top: .5em;
+		margin-bottom: .5em;
+		color: #4a4a4a;
+		font-weight: 300;
+		padding-left: .5em;
+		padding-right: .5em;
+	}
+	h3 {
+		font-size:1.2em;
+		font-weight: normal;
+		margin-bottom: 0;
+	}
+	.col-lg-4 {
+		display: inline-block;
+		width: 33%;
+		text-align: center;
+	}
+	.primary {
+		float: right;
+	}
+	.secondary {
+		float: left;
+	}
+	.lead {
+		padding: 0 24em;
+		margin-bottom: 2em;
 	}
 	.clearfix::after {
 		content: "";
