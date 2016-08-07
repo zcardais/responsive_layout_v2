@@ -128,6 +128,7 @@ ul.footer-nav {
 	text-align: center;
 }
 .col {
+	display:inline-block;
 	padding-left: 1em;
 	padding-right: 1em;
 }
@@ -169,25 +170,22 @@ ul.footer-nav {
 
 @media (min-width: 768px) {
 
-	/*.wrap {
-		min-height: calc(100vh - 89px);
-	}*/
 	p {
-		font-size: 1.2em;
+		font-size: 1.25em;
 		margin-bottom: 1.2em;
 		color: #4a4a4a;
 		font-weight: 300;
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: 1.3em;
+		padding-right: 1.3em;
 	}
 	h3 {
 		font-size:1.5em;
 		font-weight: normal;
 	}
 	.container {
-		width: 90%;
+		width: 100%;
 		max-width: 1150px;
-		margin: 0 auto 20px;
+		margin: 50px auto;
 	}
 	.two {
 		/*margin: 0 auto;*/
@@ -196,41 +194,33 @@ ul.footer-nav {
 		margin-bottom: 50px;
 		padding-top: .5em;
 		padding-bottom:.25em;
-		text-align: left;
-	}
-	.main-nav {
-		float: right;
-	}
-	.name,
-	.main-nav li {
-		float:left;
 	}
 	.main-nav li {
 		margin-left: 12px;
 	}
-	.name,
+
 	.main-nav,
 	.main-nav li {
 		display: inline-block;
 		background:none;
+		text-align: center;
 	}
 	.name {
 		text-align: center;
-		/*width: 240px;*/
-		/*margin-right: 50px;*/
 	}
 	.primary {
 		float: right;
 	}
 	.secondary {
 		float: left;
+		text-align: left;
 	}
 	.col {
 		padding-left: 0;
 		padding-right: 0;
 	}
 	.col-md-6 {
-		display: inline-block;
+		/*display: inline-block;*/
 		width: 50%;
 		margin-right: -4px;
 		vertical-align: top;
@@ -269,18 +259,29 @@ ul.footer-nav {
 
 @media (min-width: 1024px) {
 	p {
-		font-size: 1.2em;
+		font-size: 1.17em;
 		margin-top: .5em;
-		margin-bottom: .5em;
+		margin-bottom: 1.5em;
 		color: #4a4a4a;
 		font-weight: 300;
-		padding-left: .5em;
-		padding-right: .5em;
 	}
 	h3 {
-		font-size:1.2em;
+		font-size: 1.2em;
 		font-weight: normal;
 		margin-bottom: 0;
+	}
+	.container {
+		width: 90%;
+		margin: 50px auto 30px;
+	}
+	.main-nav {
+		float: right;
+	}
+	.main-nav li {
+		float:left;
+	}
+	.name {
+		float: left;
 	}
 	.col-lg-4 {
 		display: inline-block;
